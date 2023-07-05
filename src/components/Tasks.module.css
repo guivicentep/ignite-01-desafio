@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  gap: 0.5rem;
+  height: 32px;
+  width: 46rem;
+  max-width: 46rem;
+  height: 60vh;
+  overflow: auto;
+}
+
+.tasksNumbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.tasksCreated {
+  color: var(--blue-200);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.tasksCreatedAmount {
+  background: var(--gray-500);
+  width: auto;
+  padding: 0.125rem 0.3125rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  color: var(--gray-200);
+}
+
+.tasksDone {
+  color: var(--purple-200);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.tasksDoneAmount {
+  background: var(--gray-500);
+  width: auto;
+  padding: 2px 5px;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  color: var(--gray-200);
+}
+
+.wrapperIndividualTask {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Scrollbar */
+.wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #444;
+  box-shadow: 0 0 1px 1px #111, inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #3e3e3e, #111, #000);
+  box-shadow: inset 0 0 1px 1px #646464;
+}

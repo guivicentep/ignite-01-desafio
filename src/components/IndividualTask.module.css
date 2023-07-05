@@ -1,0 +1,77 @@
+.individualTask {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--gray-500);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.wrapperCheckAndLabel {
+  display: flex;
+  gap: 1rem;
+}
+
+.taskLabel {
+  color: var(--gray-100);
+  font-weight: normal;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.checkboxChecked + .taskLabel {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.checkboxUnchecked,
+.checkboxChecked {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+}
+
+.checkboxUnchecked {
+  border: 1px solid var(--blue-200);
+  background: transparent;
+}
+
+.checkboxChecked:hover {
+  border: none;
+  background: var(--purple-200);
+}
+
+.checkboxChecked {
+  background-color: var(--purple-500);
+}
+
+.checkboxUnchecked:hover {
+  background: var(--blue-500);
+}
+
+.checkIcon {
+  color: var(--gray-100);
+}
+
+.iconIndividualTask {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--gray-300);
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.iconIndividualTask:hover {
+  color: var(--red-200);
+  background: var(--gray-400);
+}
